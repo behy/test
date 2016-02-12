@@ -2,20 +2,29 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="jquery-1.12.0.js"></script>
-<script src="jquery.mobile-1.4.5.min.js"></script>
+<!-- JQuery js and css data should be accessible offline! addressing them from their remote server is not possible in offline apps -->
+<!-- using CDN Content Delivery Network is preffered while the same files are used by other Websites and if they are currently in the cash it wold be faster to access -->
+<script type="text/javascript" src="jquery-1.12.0.js"></script>
+<script type="text/javascript" src="jquery.mobile-1.4.5.min.js"></script>
 <link rel="stylesheet" href="jquery.mobile-1.4.5.min.css" />
-
-
-
-
-<!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"> -->
-<!-- <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
 </head>
-<body>
 
-<div data-role="page">
+<body>
+	<div data-role="page" id="page1">
+		<div data-role="header" id="divTest1"></div>
+		<div data-role="main" id="divTest2"></div>
+		<div data-role="main" id="divTest3"></div>
+		
+		
+		<script type="text/javascript"> 
+			
+			$("#divTest1").text("Hello");
+			$("#divTest2").text("hoooo");
+			// document.getElementById("divTest2").innerHTML="hi world!";
+			document.getElementById("divTest3").innerHTML="dgfdgsfdg";
+		</script>
+	</div>
+<!-- <div data-role="page">
   <div data-role="header">
     <h1>Welcome To My Homepage</h1>
   </div>
@@ -27,7 +36,6 @@
   <div data-role="footer">
     <h1>Footer Text</h1>
   </div>
-</div> 
-
+</div>  -->
 </body>
 </html>
