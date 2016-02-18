@@ -1,10 +1,4 @@
-		div{
-			/*background-color:#01e4f3;*/
-			}
-		p{
-			font-family:"Times New Roman";
-			font-size: 60px;
-		}
-		.c1{
-			background-color:#f30100;
-		}
+/*custom styles for jquery mobile*/
+.ui-mobile [data-role="page"] {background-color:#fff;}
+.controls {text-align: center;}
+.controls * {margin: 0 auto;}

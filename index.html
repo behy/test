@@ -4,30 +4,30 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>My App</title>
-	<script type="text/javascript" src="/test/jquery-1.12.0.js"></script>
-	<script type="text/javascript" src="/test/jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="jquery-1.12.0.js"></script>
+	<script type="text/javascript" src="jquery.mobile-1.4.5.min.js"></script>
+	<link rel="stylesheet" href="jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="mStyle.css"/>
+
+	<!-- <script type="text/javascript" src="mScripts.js"></script> -->
 	<!-- <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
-	
-	<link rel="stylesheet" href="/test/jquery.mobile-1.4.5.min.css" />
 	<!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" /> -->
 
-	<link rel="stylesheet" href="mStyle.css"/>
-	<!-- <script type="text/javascript" src="mScripts.js"></script> -->
 </head>
 
 <body>
 	
 	<!-- HOME -->
-	<div data-role="page" id="home" data-theme="a">
+	<div data-role="page" id="home" >
 		
 		<!-- header -->
-		<div data-role="header"  data-theme="a">
+		<div data-role="header" >
 			<h1>My Test App</h1>
 		</div>		<!-- /header -->
 		
 		<!-- main -->
-		<div role="main" class="ui-content">
+		<div data-role="main" class="ui-content">
 			<ul data-role="listview" data-inset="true">
 				<li><a href="#search">Search</a></li>
 				<li><a href="#hours">Hours</a></li>
