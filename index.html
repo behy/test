@@ -1,41 +1,140 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- JQuery js and css data should be accessible offline! addressing them from their remote server is not possible in offline apps -->
-<!-- using CDN Content Delivery Network is preffered while the same files are used by other Websites and if they are currently in the cash it wold be faster to access -->
-<script type="text/javascript" src="jquery-1.12.0.js"></script>
-<script type="text/javascript" src="jquery.mobile-1.4.5.min.js"></script>
-<link rel="stylesheet" href="jquery.mobile-1.4.5.min.css" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My App</title>
+	<!-- <script type="text/javascript" src="/test/jquery-1.12.0.js"></script>
+	<script type="text/javascript" src="/test/jquery.mobile-1.4.5.min.js"></script> -->	
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+	<!-- <link rel="stylesheet" href="/test/jquery.mobile-1.4.5.min.css" /> -->
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+
+	<link rel="stylesheet" href="mStyle.css"/>
+	<!-- <script type="text/javascript" src="mScripts.js"></script> -->
 </head>
 
 <body>
-	<div data-role="page" id="page1">
-		<div data-role="header" id="divTest1"></div>
-		<div data-role="main" id="divTest2"></div>
-		<div data-role="main" id="divTest3"></div>
+	
+	<!-- HOME -->
+	<div data-role="page" id="home" data-theme="a">
 		
+		<!-- header -->
+		<div data-role="header"  data-theme="a">
+			<h1>My Test App</h1>
+		</div>		<!-- /header -->
 		
-		<script type="text/javascript"> 
+		<!-- main -->
+		<div role="main" class="ui-content">
+			<ul data-role="listview" data-inset="true">
+				<li><a href="#search">Search</a></li>
+				<li><a href="#hours">Hours</a></li>
+				<li><a href="#ask">Ask</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#where" data-transition="pop">Where</a></li>
+			</ul>
+		</div> <!-- /main -->
+		
+		<!-- footer -->
+		<div data-role="footer">
 			
-			$("#divTest1").text("Hello");
-			$("#divTest2").text("hoooo");
-			// document.getElementById("divTest2").innerHTML="hi world!";
-			document.getElementById("divTest3").innerHTML="dgfdgsfdg";
-		</script>
+		</div><!-- /footer -->
 	</div>
-<!-- <div data-role="page">
-  <div data-role="header">
-    <h1>Welcome To My Homepage</h1>
-  </div>
+	
+	<!-- SEARCH -->
+	<div data-role="page" id="search" data-theme="a">
+		<!-- header -->
+		<div data-role="header">
+			
+		</div>		<!-- /header -->
+		
+		<!-- main -->
+		<div data-role="main">
+			<p> search</p>
+			
+		</div> <!-- /main -->
+		
+		<!-- footer -->
+		<div data-role="footer">
+			
+		</div><!-- /footer -->
+	</div>
 
-  <div data-role="main" class="ui-content">
-    <p>I Am Now A Mobile Developer!!</p>
-  </div>
+	<!-- HOURS -->
+	<div data-role="page" id="hours" data-theme="a">
+		<!-- header -->
+		<div data-role="header">
+			
+		</div>		<!-- /header -->
+		
+		<!-- main -->
+		<div data-role="main">
+			<p> Hours</p>
+			
+		</div> <!-- /main -->
+		
+		<!-- footer -->
+		<div data-role="footer">
+			
+		</div><!-- /footer -->
+	</div>
 
-  <div data-role="footer">
-    <h1>Footer Text</h1>
-  </div>
-</div>  -->
+	<!-- Asd -->
+	<div data-role="page" id="ask" data-theme="a">
+		<!-- header -->
+		<div data-role="header">
+			
+		</div>		<!-- /header -->
+		
+		<!-- main -->
+		<div data-role="main">
+			<p> ask</p>
+			
+		</div> <!-- /main -->
+		
+		<!-- footer -->
+		<div data-role="footer">
+			
+		</div><!-- /footer -->
+	</div>
+
+	<!-- ABOUT -->
+	<div data-role="page" id="about" data-theme="a">
+		<!-- header -->
+		<div data-role="header">
+			
+		</div>		<!-- /header -->
+		
+		<!-- main -->
+		<div data-role="main">
+			<p> about</p>
+			
+		</div> <!-- /main -->
+		
+		<!-- footer -->
+		<div data-role="footer">
+			
+		</div><!-- /footer -->
+	</div>
+
+	<!-- WHERE -->
+	<div data-role="page" id="where" data-theme="a">
+		<!-- header -->
+		<div data-role="header">
+			
+		</div>		<!-- /header -->
+		
+		<!-- main -->
+		<div data-role="main">
+			<p> where</p>
+		</div> <!-- /main -->
+		
+		<!-- footer -->
+		<div data-role="footer">
+			
+		</div><!-- /footer -->
+	</div>
 </body>
 </html>
